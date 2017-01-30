@@ -6,8 +6,8 @@ var canvas = (function(){
     function init(){
         var content = document.getElementById("content");
         canvas = document.createElement('canvas');
-        canvas.setAttribute('width', 260);
-        canvas.setAttribute('height', 260);
+        canvas.setAttribute('width', 500);
+        canvas.setAttribute('height', 500);
         content.appendChild(canvas);
 
         ctx = canvas.getContext("2d");
@@ -29,7 +29,7 @@ var canvas = (function(){
         model.eachLine(function(a,b){
             var s = 20;
             //lines
-            ctx.lineWidth= s*0.75;
+            ctx.lineWidth= s*0.80;
             ctx.lineJoin = 'round';
             ctx.lineCap = 'round';
             ctx.strokeStyle = 'black';
